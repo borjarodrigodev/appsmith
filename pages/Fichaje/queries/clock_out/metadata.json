@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.timeclock\nSET exit_time = CURRENT_TIMESTAMP,\n    status = 'outside'\nWHERE id = (\n    SELECT id \n    FROM public.timeclock \n    WHERE user_id = {{appsmith.user.id || 1}}\n      AND date = CURRENT_DATE\n      AND exit_time IS NULL\n    ORDER BY entry_time DESC\n    LIMIT 1\n)\nRETURNING *;",
+      "body": "UPDATE public.timeclock\nSET exit_time = CURRENT_TIMESTAMP,\n    status = 'outside'\nWHERE id = (\n    SELECT id \n    FROM public.timeclock \n    WHERE user_id = {{appsmith.user.id || 1}}\n      AND date = CURRENT_DATE\n      AND exit_time IS NULL\n    ORDER BY entry_time DESC\n    LIMIT 1\n)\nRETURNING *;\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -33,4 +33,3 @@
     "userSetOnLoad": false
   }
 }
-

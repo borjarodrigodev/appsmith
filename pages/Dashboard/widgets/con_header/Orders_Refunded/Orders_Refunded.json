@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "#192550",
   "borderRadius": "0.375rem",
-  "bottomRow": 32,
+  "bottomRow": 50,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -64,7 +64,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
-  "topRow": 18,
+  "topRow": 36,
   "type": "STATBOX_WIDGET",
   "widgetId": "ou10vbrwwh",
   "widgetName": "Orders_Refunded"

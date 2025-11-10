@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n    id,\n    user_name,\n    entry_time,\n    exit_time,\n    date,\n    status,\n    CASE \n        WHEN exit_time IS NULL THEN 'Dentro'\n        ELSE 'Fuera'\n    END as current_status,\n    CASE \n        WHEN exit_time IS NOT NULL THEN \n            EXTRACT(EPOCH FROM (exit_time - entry_time)) / 3600\n        ELSE NULL\n    END as hours_worked\nFROM public.timeclock\nWHERE user_id = {{appsmith.user.id || 1}}\nORDER BY date DESC, entry_time DESC\nLIMIT 50;",
+      "body": "SELECT \n    id,\n    user_name,\n    entry_time,\n    exit_time,\n    date,\n    status,\n    CASE \n        WHEN exit_time IS NULL THEN 'Dentro'\n        ELSE 'Fuera'\n    END as current_status,\n    CASE \n        WHEN exit_time IS NOT NULL THEN \n            EXTRACT(EPOCH FROM (exit_time - entry_time)) / 3600\n        ELSE NULL\n    END as hours_worked\nFROM public.timeclock\nWHERE user_id = {{appsmith.user.id || 1}}\nORDER BY date DESC, entry_time DESC\nLIMIT 50;\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -33,4 +33,3 @@
     "userSetOnLoad": true
   }
 }
-

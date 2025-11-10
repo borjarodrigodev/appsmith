@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "#192550",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 32,
+  "bottomRow": 50,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -67,7 +67,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 47,
-  "topRow": 18,
+  "topRow": 36,
   "type": "STATBOX_WIDGET",
   "widgetId": "6vyue3onq7",
   "widgetName": "Orders_delayed"
