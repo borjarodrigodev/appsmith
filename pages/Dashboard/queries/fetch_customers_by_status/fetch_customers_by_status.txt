@@ -1,7 +1,0 @@
-SELECT 
-  status,
-  COUNT(*) as count
-FROM public.customer
-GROUP BY status
-ORDER BY count DESC;
-
