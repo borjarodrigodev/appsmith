@@ -18,6 +18,10 @@
     {
       "id": "Dashboard",
       "isDefault": true
+    },
+    {
+      "id": "Fichaje",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

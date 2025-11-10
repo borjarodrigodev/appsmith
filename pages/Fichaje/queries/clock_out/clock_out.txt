@@ -1,0 +1,14 @@
+UPDATE public.timeclock
+SET exit_time = CURRENT_TIMESTAMP,
+    status = 'outside'
+WHERE id = (
+    SELECT id 
+    FROM public.timeclock 
+    WHERE user_id = {{appsmith.user.id || 1}}
+      AND date = CURRENT_DATE
+      AND exit_time IS NULL
+    ORDER BY entry_time DESC
+    LIMIT 1
+)
+RETURNING *;
+

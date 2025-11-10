@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS public.timeclock (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER,
+    user_name VARCHAR(255),
+    entry_time TIMESTAMP,
+    exit_time TIMESTAMP,
+    date DATE DEFAULT CURRENT_DATE,
+    status VARCHAR(50) DEFAULT 'inside',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+

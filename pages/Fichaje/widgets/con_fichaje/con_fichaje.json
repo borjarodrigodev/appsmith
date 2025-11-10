@@ -4,13 +4,13 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 171,
+  "bottomRow": 100,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 500,
+      "bottomRow": 900,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -28,19 +28,19 @@
       "isDeprecated": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "charts_canvas",
+      "key": "fichaje_canvas_key",
       "leftColumn": 0,
-      "minHeight": 500,
+      "minHeight": 900,
       "parentColumnSpace": 1,
-      "parentId": "con_charts_widget",
+      "parentId": "con_fichaje_widget",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 1224,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "charts_canvas_id",
-      "widgetName": "Canvas_Charts"
+      "widgetId": "fichaje_canvas_id",
+      "widgetName": "Canvas_Fichaje"
     }
   ],
   "containerStyle": "card",
@@ -62,7 +62,6 @@
       "key": "boxShadow"
     }
   ],
-  "labelTextSize": "0.875rem",
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
@@ -70,7 +69,8 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "con_charts_key",
+  "key": "con_fichaje_key",
+  "labelTextSize": "0.875rem",
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -85,10 +85,10 @@
     "group"
   ],
   "shouldScrollContents": false,
-  "topRow": 121,
+  "topRow": 1,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "con_charts_widget",
-  "widgetName": "con_charts"
+  "widgetId": "con_fichaje_widget",
+  "widgetName": "con_fichaje"
 }
 

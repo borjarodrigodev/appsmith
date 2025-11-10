@@ -1,0 +1,21 @@
+SELECT 
+    id,
+    user_name,
+    entry_time,
+    exit_time,
+    date,
+    status,
+    CASE 
+        WHEN exit_time IS NULL THEN 'Dentro'
+        ELSE 'Fuera'
+    END as current_status,
+    CASE 
+        WHEN exit_time IS NOT NULL THEN 
+            EXTRACT(EPOCH FROM (exit_time - entry_time)) / 3600
+        ELSE NULL
+    END as hours_worked
+FROM public.timeclock
+WHERE user_id = {{appsmith.user.id || 1}}
+ORDER BY date DESC, entry_time DESC
+LIMIT 50;
+
