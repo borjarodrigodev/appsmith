@@ -42,7 +42,9 @@
   "columnWidthMap": {},
   "defaultPageSize": 10,
   "defaultSelectedRowIndex": "0",
-  "defaultSelectedRowIndices": [0],
+  "defaultSelectedRowIndices": [
+    0
+  ],
   "delimiter": ",",
   "displayName": "Table",
   "dynamicBindingPathList": [
@@ -76,7 +78,10 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
-  "searchTags": ["table", "data"],
+  "searchTags": [
+    "table",
+    "data"
+  ],
   "tableData": "{{fetch_all_timeclock_records.data}}",
   "topRow": 27,
   "type": "TABLE_WIDGET",
@@ -84,4 +89,3 @@
   "widgetId": "tbl_timeclock_id",
   "widgetName": "tbl_timeclock"
 }
-
