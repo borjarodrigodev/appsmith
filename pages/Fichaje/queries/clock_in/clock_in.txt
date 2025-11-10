@@ -1,7 +1,7 @@
 INSERT INTO public.timeclock (user_id, user_name, entry_time, date, status)
 VALUES (
   {{appsmith.user.id || 1}},
-  '{{appsmith.user.name || "Usuario"}}',
+  {{appsmith.user.name || 'Usuario'}},
   CURRENT_TIMESTAMP,
   CURRENT_DATE,
   'inside'
