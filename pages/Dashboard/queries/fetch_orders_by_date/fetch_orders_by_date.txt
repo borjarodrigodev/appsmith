@@ -1,0 +1,8 @@
+SELECT 
+  DATE(created_at) as date,
+  COUNT(*) as order_count
+FROM public."order"
+WHERE created_at >= CURRENT_DATE - INTERVAL '30 days'
+GROUP BY DATE(created_at)
+ORDER BY date ASC;
+

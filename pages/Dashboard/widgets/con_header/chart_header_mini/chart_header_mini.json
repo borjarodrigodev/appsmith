@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "chartData": "{{fetch_orders_by_date.data.map(item => ({ x: item.date, y: item.order_count }))}}",
+  "chartName": "Tendencia de Pedidos",
+  "chartType": "LINE_CHART",
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "chartData"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hasOnDataPointClick": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "chart_header_mini_key",
+  "labelOrientation": "auto",
+  "leftColumn": 42,
+  "parentColumnSpace": 19.8125,
+  "parentId": "1r82sdzzav",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "showDataPointLabel": false,
+  "topRow": 6,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "chart_header_mini_id",
+  "widgetName": "chart_header_mini"
+}
+

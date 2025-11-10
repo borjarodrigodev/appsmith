@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "chartData": "{{fetch_customers_by_status.data.map(item => ({ x: item.status, y: item.count }))}}",
+  "chartName": "Distribución de Clientes",
+  "chartType": "PIE_CHART",
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "chartData"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hasOnDataPointClick": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "chart_customers_distribution_key",
+  "labelOrientation": "auto",
+  "leftColumn": 49,
+  "parentColumnSpace": 19.125,
+  "parentId": "charts_canvas_id",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "showDataPointLabel": true,
+  "topRow": 6,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "chart_customers_distribution_id",
+  "widgetName": "chart_customers_distribution"
+}
+

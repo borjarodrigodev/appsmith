@@ -19,7 +19,7 @@
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "g76ztn8fne",
   "leftColumn": 42,
   "maxZoomLevel": 1,
